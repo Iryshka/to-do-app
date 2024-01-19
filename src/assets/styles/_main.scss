@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1;
+}
+
+.input {
+  width: 280px;
+  padding: 10px;
+  border: 2px solid $font-color-1;
+}
+
+::placeholder {
+  color: $font-color-2;
+  font-weight: 600;
+  opacity: 0.4;
+}

@@ -1,12 +1,20 @@
-import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import axios from 'axios'
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
+export const useTasksStore = defineStore('tasks', {
+  state: () => ({
+    tasks: [],
+    status: 'IDLE'
+  }),
+  getters: {},
+  actions: {
+    async fetchTasks() {
+      try {
+        const { data } = await axios.get('http://localhost:8000/tasks')
+        this.tasks = data
+      } catch (error) {
+        console.log(error)
+      }
+    }
   }
-
-  return { count, doubleCount, increment }
 })

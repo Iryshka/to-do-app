@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Archivo', sans-serif;
+  src: url('./Archivo-Regular.woff') format('woff');
+  src: url('./Archivo_SemiCondensed-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo', sans-serif;
+  src: url('./Archivo_Condensed-SemiBold.woff') format('woff');
+  src: url('./Archivo_Condensed-SemiBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo', sans-serif;
+  src: url('./Archivo_Condensed-Bold.woff') format('woff');
+  src: url('./Archivo_Condensed-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
